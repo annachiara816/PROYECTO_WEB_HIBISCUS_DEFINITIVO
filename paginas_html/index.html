@@ -78,7 +78,11 @@
 
       <div class="video-container">
 
-        <video src="../Imagenes/juego.mp4" loop autoplay muted></video> 
+        <!-- <video src="../Imagenes/juego.mov" loop autoplay muted></video> -->
+        <video id="miVideo" src="../Imagenes/juego.mov" loop></video>
+        <button class="btn" onclick="document.getElementById('miVideo').play()">Reproducir</button>
+
+        <!-- loop autoplay muted -->
 
         <h3>Best bracelet sellers</h3>
       </div>
@@ -105,7 +109,7 @@
 
   <section class="icons-container">
 
-    <div class="icons"></div>
+    <div class="icons">
 
     <img src="../Imagenes/special_offer.png" alt="">
     <div class="info">
@@ -125,9 +129,9 @@
       </div>
     </div>
 
-    <div class="icons"></div>
+    <div class="icons">
 
-    <img src="../Imagenes/gift-card1.png" alt="">
+    <img src="../Imagenes/gift-card.png" alt="">
     <div class="info">
       <h3>Offer & Gifts</h3>
       <span>on all orders</span>
@@ -135,7 +139,7 @@
     </div>
     </div>
 
-    <div class="icons"></div>
+    <div class="icons">
 
     <img src="../Imagenes/securecard1.png" alt="">
     <div class="info">
@@ -539,17 +543,21 @@
 
 
         <div class="box">
+          <div class="icons">
           <h3>Connect With Us</h3>
           <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
           <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>  
+          <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+          
+        </div>
         
       </div>
         </div>
 
         <div class="credit">
 
+          &copy;
           Created by <span>Gloria Naranjo Web desingner</span> | All rights reserved</div>
         
     </section>
