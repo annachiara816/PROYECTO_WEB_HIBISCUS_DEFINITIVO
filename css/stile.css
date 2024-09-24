@@ -201,16 +201,16 @@ header .fa-bars{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding-top:2rem;
-    padding-bottom: 1rem;
+    padding-top:5rem;
+    padding-bottom: 5rem;
 
 }
 .icons-container .icons{
-    width: 90px; 
-    height: 90px;
+    background: #fff;
+    border: .1rem solid rgb(0, 0, 0,.1);
     padding: 2rem; 
     display: flex;   
-    flex: 1 1 1 25rem; 
+    flex: 1 1 25rem; 
     align-items: center; 
     
 }
@@ -220,7 +220,7 @@ header .fa-bars{
      
 } 
 .icons-container .icons h3{
-    color: #444040;
+    color:#333;
     padding-bottom: .5rem;
     font-size: 1.5rem;
 
@@ -459,11 +459,24 @@ header .fa-bars{
 }
 .footer .credit span{
     color: var(--pink);
+}
 
+.footer .box-container .box .icons h3{
+    color: #333;
+    font-size: 2.2rem;
+    padding: 1rem 0;
 
 }
 
+.footer .box .icons a{
+    font-size: 2.5rem;
+    color:#4e0cb1e4;
+    margin-left: 1.8rem;
 
+}
+.footer .box .icons a:hover{
+    color: #e84393;
+}
 
 
 
