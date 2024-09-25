@@ -49,7 +49,7 @@ section{
 }
 
 body{
-    /* background-color:white; */
+    background-color:white;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -112,4 +112,75 @@ header .fa-bars{
     cursor: pointer;
     border: .1rem solid rgb(0, 0, 0,.3);
     display: none;
+}
+
+
+
+
+
+
+
+
+
+.footer .box-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+.footer .box-container .box{
+    flex: 1 1 25rem;
+
+}
+.footer .box-container .box h3{
+    color: #333;
+    font-size: 2.2rem;
+    padding: 1rem 0;
+
+}
+.footer .box-container .box a{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+
+}
+.footer .box-container .box a:hover{
+    color: var(--pink);
+    text-decoration: underline;
+}
+.footer .box-container .box img{
+    margin-top: 1rem;
+
+}
+.footer .credit{
+
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top:.1rem solid rgb(0, 0, 0,.1);
+}
+.footer .credit span{
+    color: var(--pink);
+}
+
+.footer .box-container .box .icons h3{
+    color: #333;
+    font-size: 2.2rem;
+    padding: 1rem 0;
+
+}
+
+.footer .box .icons a{
+    font-size: 2.5rem;
+    color:#4e0cb1e4;
+    margin-left: 1.8rem;
+
+}
+.footer .box .icons a:hover{
+    color: #e84393;
 }
