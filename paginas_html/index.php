@@ -134,6 +134,11 @@
   </footer> -->
   <!-- Footer section ends -->
 
+  <?php
+      include("register.php");
+  
+  ?>
+
 </body>
 
 </html>
