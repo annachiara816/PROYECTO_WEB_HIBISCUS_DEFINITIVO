@@ -26,7 +26,7 @@
     <a href="#" class="logo">Hibiscus Shop<span>.</span></a>
 
     <nav class="navbar">
-      <a href="#home">Home</a>
+      <a href="index.html">Home</a>
       <a href="#products">Products</a>
       <a href="#about_us">About Us</a>
       <a href="#contact">Contact</a>
