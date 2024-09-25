@@ -165,7 +165,7 @@ input::placeholder{
     top: 50%;
     transform: translateY(-55%);
 }
-.succes{
+.success{
     position: absolute;
     top: 50px;
     color: #00C83c;
