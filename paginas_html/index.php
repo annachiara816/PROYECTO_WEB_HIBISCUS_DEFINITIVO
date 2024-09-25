@@ -48,36 +48,39 @@
 
     <div class="input-wrapper">
       <label for="name"></label>
-      <input type="text" id="name" name="name" placeholder="Name" required>
+      <input type="text" id="name" name="name" placeholder="Name">
       <img class="input-icon" src="../Imagenes/name.svg" alt="Name icon">
     </div>
 
     <div class="input-wrapper">
       <label for="email"></label>
-      <input type="email" id="email" name="email" placeholder="Email" required>
+      <input type="email" id="email" name="email" placeholder="Email">
       <img class="input-icon" src="../Imagenes/email.svg" alt="Email icon">
     </div>
 
     <div class="input-wrapper">
       <label for="address"></label>
-      <input type="text" id="address" name="address" placeholder="Address" required>
+      <input type="text" id="address" name="address" placeholder="Address">
       <img class="input-icon" src="../Imagenes/direction.svg" alt="Address icon">
     </div>
 
     <div class="input-wrapper">
       <label for="phone"></label>
-      <input type="tel" id="phone" name="phone" placeholder="Telephone" required>
+      <input type="tel" id="phone" name="phone" placeholder="Telephone">
       <img class="input-icon" src="../Imagenes/phone.svg" alt="Phone icon">
     </div>
 
     <div class="input-wrapper">
       <label for="password"></label>
-      <input type="password" id="password" name="password" placeholder="Password" required>
+      <input type="password" id="password" name="password" placeholder="Password">
       <img class="input-icon" src="../Imagenes/password.svg" alt="Password icon">
     </div>
 
     <input class="btn" type="submit" name="register" value="Register">
   </form>
+  <script src="validation.js"></script>
+
+
   <!-- Formulario section ends -->
 
   <!-- Footer section -->
