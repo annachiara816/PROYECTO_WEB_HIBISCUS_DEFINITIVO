@@ -30,7 +30,7 @@
       <a href="#products">Products</a>
       <a href="#about_us">About Us</a>
       <a href="#contact">Contact</a>
-      <a href="#sign_in">Register</a>
+      <a href="index.php">Register</a>
     </nav>
 
     <div class="icons">
@@ -42,7 +42,7 @@
   <!-- Header section ends -->
 
   <!-- Formulario section -->
-  <form method="post" action="register.php">
+  <form method="post" action="registrar.php">
     <h2>Register</h2>
     <p>Start your registration</p>
 
@@ -76,7 +76,7 @@
       <img class="input-icon" src="../Imagenes/password.svg" alt="Password icon">
     </div>
 
-    <input class="btn" type="submit" name="register" value="Register">
+    <input class="btn" type="submit" name="register" value="Enviar">
   </form>
   <script src="validation.js"></script>
 
@@ -137,10 +137,7 @@
   </footer> -->
   <!-- Footer section ends -->
 
-  <?php
-      include("register.php");
-  
-  ?>
+
 
 </body>
 
