@@ -74,7 +74,9 @@ header{
     justify-content:space-between;
     z-index:1000;
     box-shadow:0 .5rem rgb(0, 0, 0,.1);
-    }
+    margin-bottom: 40px;
+
+}
 
 header .logo{
     font-family: "Edu AU VIC WA NT Hand", cursive;
@@ -117,6 +119,19 @@ header .fa-bars{
     display: none;
 }
 form{
+    width: 100%;        /* Establece el ancho al 100% del contenedor padre */
+    max-width: 400px;    /* Limita el ancho máximo del formulario a 400px */
+    margin: 0 auto;      /* Centra el formulario horizontalmente */
+    padding: 20px;       /* Añade algo de espacio interno (opcional) */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional para darle estilo */
+    border: 1px solid #ccc;  /* Añade un borde opcional */
+    border-radius: 8px;  /* Bordes redondeados (opcional) */
+    background-color: #f9f9f9; /* Fondo de color claro (opcional) */
+}
+
+
+/* form{
+>>>>>>> version3
     box-shadow: 0 0 20px rgb(0, 0, 0,.2);
     padding: 40px 35px;
     border-radius: 25px;
@@ -125,7 +140,8 @@ form{
     text-align: center;
     width: 400px;
     margin-top: 100px;
-}
+} */
+/* >>>>>>> version3 */
 
 form h2{
     font-size: 35px;
@@ -141,6 +157,12 @@ form p{
     position: relative;
     width: 305px;
     margin-bottom: 20px;
+
+    width: 250px;
+    margin-bottom: 20px;
+    margin: 0 auto 20px; 
+
+/* >>>>>>> version3 */
 }
 input{
     color: #0d0d0d;
@@ -196,7 +218,6 @@ input::placeholder{
     gap: 1.5rem;
 
 } */
-
 
 .footer .box-container {
     display: flex;
@@ -263,8 +284,8 @@ input::placeholder{
 }
 
 
-
-
+/* =======
+>>>>>>> version3 */
 
 
 

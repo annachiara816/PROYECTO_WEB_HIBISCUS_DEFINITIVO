@@ -63,14 +63,14 @@ header{
     top:0;
     left:0;
     right:0;
-    background-color:#f5f5f5;
+    background-color:#f3e7f7;
     padding:2rem 9%;
     display:flex;
     align-items:center;
     justify-content:space-between;
     z-index:1000;
     box-shadow:0 .5rem rgb(0, 0, 0,.1);
-    }
+}
 
 header .logo{
     font-family: "Edu AU VIC WA NT Hand", cursive;
@@ -265,8 +265,8 @@ header .fa-bars{
 }
 .products .box-container .box .image img{
     height: 25rem;
-    height: 180px;
-    width: 210px;
+    height: 165px;
+    width: 225px;
 
 }
 .products .box-container .box:hover .image img{
@@ -288,7 +288,7 @@ header .fa-bars{
     line-height: 5rem;
     font-size: 2rem;
     width: 50%;
-    background: var(--pink);
+    background:#4e0cb1e4;    
     color: #fff;
 }
 .products .box-container .box .image .icons .cart-btn{
@@ -497,7 +497,11 @@ header .fa-bars{
 
 
 /* media queries */
-@media (max-width:991px) {
+/* @media (max-width:991px) 
+
+{ */
+
+@media (min-width: 992px) and (max-width: 1440px) {
     html{
         font-size:55%;
         
