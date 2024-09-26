@@ -78,7 +78,7 @@
 
     <input class="btn" type="submit" name="register" value="Enviar">
   </form>
-  <script src="validation.js"></script>
+  <!-- <script src="validation.js"></script> -->
 
 
   <!-- Formulario section ends -->
