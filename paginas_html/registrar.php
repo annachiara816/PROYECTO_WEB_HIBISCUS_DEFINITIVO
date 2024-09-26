@@ -1,38 +1,41 @@
 <?php
-    require("conexion.php");
 
-    if(isset($_POST['register'])) {
-        // Comprobamos que todos los campos estén llenos
-        if(
-            strlen($_POST['name']) >= 1 &&
-            strlen($_POST['email']) >= 1 &&
-            strlen($_POST['address']) >= 1 &&
-            strlen($_POST['phone']) >= 1 &&
-            strlen($_POST['password']) >= 1
-        ) {
-            // Limpiamos los valores de los inputs
-            $name = trim($_POST['name']);
-            $email = trim($_POST['email']);
-            $address = trim($_POST['address']); 
-            $phone = trim($_POST['phone']);
-            $password = trim($_POST['password']);
-            $fecha = date("Y-m-d"); // Formato correcto para la fecha en bases de datos
+require("conexion.php");
 
-            // Consulta para insertar datos
-            $consulta = "INSERT INTO datos (nombre, email, direccion, telefono, contrasena, fecha) 
-                        VALUES ('$name', '$email', '$address', '$phone', '$password', '$fecha')";
+if (isset($_POST['register'])) {
+    // Validar que los campos no estén vacíos
+    if (
+        strlen($_POST['name']) >= 1 &&
+        strlen($_POST['email']) >= 1 &&
+        strlen($_POST['address']) >= 1 &&
+        strlen($_POST['phone']) >= 1 &&
+        strlen($_POST['password']) >= 1
+    ) {
+        // Limpiar y asegurar los datos de entrada
+        $name = mysqli_real_escape_string($conex, trim($_POST['name']));
+        $email = mysqli_real_escape_string($conex, trim($_POST['email']));
+        $address = mysqli_real_escape_string($conex, trim($_POST['address']));
+        $phone = mysqli_real_escape_string($conex, preg_replace('/\D/', '', $_POST['phone']));
+        $password = password_hash(trim($_POST['password']), PASSWORD_DEFAULT);
+        $fecha = date("Y-m-d");
 
-            // Ejecutamos la consulta
-            $resultado = mysqli_query($conex, $consulta);
+        // Consulta para insertar datos
+        $consulta = "INSERT INTO datos (nombre, email, direccion, telefono, contrasena, fecha) 
+                    VALUES ('$name', '$email', '$address', '$phone', '$password', '$fecha')";
 
-            // Comprobamos si la inserción fue exitosa
-            if ($resultado) {
-                echo '<h3 class="success">Tu registro se ha completado</h3>';
-            } else {
-                echo '<h3 class="error">Ocurrió un error al registrar</h3>';
-            }
+        // Ejecutar la consulta
+        $resultado = mysqli_query($conex, $consulta);
+
+        // Comprobar si la inserción fue exitosa
+        if ($resultado) {
+            echo '<h3 class="success">Tu registro se ha completado</h3>';
         } else {
-            echo '<h3 class="error">Por favor llena todos los campos</h3>';
+            echo '<h3 class="error">Ocurrió un error al registrar: ' . mysqli_error($conex) . '</h3>';
         }
+    } else {
+        echo '<h3 class="error">Por favor llena todos los campos</h3>';
     }
-?>
+}
+
+?> 
+
