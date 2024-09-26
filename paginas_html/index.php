@@ -30,7 +30,7 @@
       <a href="#products">Products</a>
       <a href="#about_us">About Us</a>
       <a href="#contact">Contact</a>
-      <a href="index.php">Register</a>
+      <!-- <a href="index.php">Register</a> -->
     </nav>
 
     <div class="icons">
