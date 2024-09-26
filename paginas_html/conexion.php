@@ -1,7 +1,7 @@
 <?php
 $servidor = "localhost";  // Nombre del servidor
 $usuario = "root";        // Nombre de usuario
-$contra = " ";             // Contraseña
+$contra = "";             // Contraseña
 $basedatos = "registro";    // Nombre de la base de datos
 
 // Conexión a la base de datos
