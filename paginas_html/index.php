@@ -42,7 +42,7 @@
   <!-- Header section ends -->
 
   <!-- Formulario section -->
-  <form method="post" action="tu_accion.php">
+  <form method="post" action="register.php">
     <h2>Register</h2>
     <p>Start your registration</p>
 
