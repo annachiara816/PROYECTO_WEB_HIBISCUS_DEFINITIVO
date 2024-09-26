@@ -37,8 +37,8 @@
     <!-- <h2>Bracelete, shop and more</h2> -->
 
     <nav class="navbar">
-      <a href="#index.html">Home</a>
-      <a href="#productos">Products</a>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
       <a href="#about_us">About Us</a>
       <a href="#contact">Contact</a>
       <a href="#sing_in">Sing in</a>
@@ -63,7 +63,6 @@
       <span>Fashion jewelry for girls</span>
       <p>Necklaces, bracelets and rings feature trendy character figures, making dressing up even more fun and special.
       </p>
-      <!-- <a href="../Imagenes/juego.mp4" class="btn">shop now</a> -->
 
     </div>
   </section>
@@ -79,7 +78,11 @@
 
       <div class="video-container">
 
-        <video src="../Imagenes/juego.mp4" loop autoplay muted></video>
+        <!-- <video src="../Imagenes/juego.mov" loop autoplay muted></video> -->
+        <video id="miVideo" src="../Imagenes/juego.mov" muted></video>
+        <button class="btn" onclick="document.getElementById('miVideo').play()">Reproducir</button>
+
+        <!-- loop autoplay muted -->
 
         <h3>Best bracelet sellers</h3>
       </div>
@@ -106,7 +109,7 @@
 
   <section class="icons-container">
 
-    <div class="icons"></div>
+    <div class="icons">
 
     <img src="../Imagenes/special_offer.png" alt="">
     <div class="info">
@@ -126,9 +129,9 @@
       </div>
     </div>
 
-    <div class="icons"></div>
+    <div class="icons">
 
-    <img src="../Imagenes/gift-card1.png" alt="">
+    <img src="../Imagenes/gift-card.png" alt="">
     <div class="info">
       <h3>Offer & Gifts</h3>
       <span>on all orders</span>
@@ -136,7 +139,7 @@
     </div>
     </div>
 
-    <div class="icons"></div>
+    <div class="icons">
 
     <img src="../Imagenes/securecard1.png" alt="">
     <div class="info">
@@ -491,23 +494,77 @@
 
    </section>
 
-
-
    <!-- contact section ends -->
 
-  <!-- <footer>
-    <form action="#">share Feedback</form>
-    <p>Telefono: 643931618</p>
-    <p>Direccion: Calle dos de mayo n5- Alcorocon Madrid</p><br><br>
-    <h3>Connect With Us</h3>
+   <!-- footer section starts -->
 
-    <div class="social-icons">
-      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
-  </div>
-  </footer> -->
+   <footer>
+    <section class="footer">
+
+        <div class="box-container">
+
+          <div class="box">
+            <h3>Quick links</h3>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Review</a>
+            <a href="#">Contact</a>
+
+          </div>
+
+          <div class="box">
+            <h3>Extra links</h3>
+            <a href="#">My account</a>
+            <a href="#">My order</a>
+            <a href="#">My favorite</a>
+            
+          </div>
+
+          <div class="box">
+            <h3>Locations</h3>
+            <a href="#">India</a>
+            <a href="#">Usa</a>
+            <a href="#">Colombia</a>
+            <a href="#">Italia</a>
+
+          </div>
+
+
+          <div class="box">
+          <h3>Contact Info</h3>
+          <a href="#">+3925688807</a>
+          <a href="#">hibiscus@gmail.com</a>
+          <a href="#">Madrid Espana - 28921</a>
+          <img src="../Imagenes/payments2.png" alt="">
+
+        </div>
+        </div>
+
+
+        <div class="box">
+          <div class="icons">
+          <h3>Connect With Us</h3>
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+          
+        </div>
+        
+      </div>
+        </div>
+
+        <div class="credit">
+
+          &copy;
+          Created by <span>Gloria Naranjo Web desingner</span> | All rights reserved</div>
+        
+    </section>
+
+  </footer>
+   <!-- footer section ends -->
+
 </body>
 
 </html>
