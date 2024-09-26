@@ -13,6 +13,7 @@
 
   <link rel="icon" type="image/x-icon" href="../Imagenes/logo1.ico">
   <link rel="stylesheet" href="../css/estilo.css">
+  <script src="validation.js" defer></script>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -30,7 +31,7 @@
       <a href="#products">Products</a>
       <a href="#about_us">About Us</a>
       <a href="#contact">Contact</a>
-      <!-- <a href="index.php">Register</a> -->
+      <a href="index.php">Register</a>
     </nav>
 
     <div class="icons">
@@ -78,7 +79,7 @@
 
     <input class="btn" type="submit" name="register" value="Enviar">
   </form>
-  <!-- <script src="validation.js"></script> -->
+  
 
 
   <!-- Formulario section ends -->

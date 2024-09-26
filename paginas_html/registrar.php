@@ -28,7 +28,7 @@ if (isset($_POST['register'])) {
 
         // Comprobar si la inserción fue exitosa
         if ($resultado) {
-            echo '<h3 class="success">Tu registro se ha completado</h3>';
+            echo '<h3 class="success">Tu registro se ha completado correctamente!!</h3>';
         } else {
             echo '<h3 class="error">Ocurrió un error al registrar: ' . mysqli_error($conex) . '</h3>';
         }

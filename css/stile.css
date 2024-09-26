@@ -288,7 +288,7 @@ header .fa-bars{
     line-height: 5rem;
     font-size: 2rem;
     width: 50%;
-    background: var(--pink);
+    background:#4e0cb1e4;    
     color: #fff;
 }
 .products .box-container .box .image .icons .cart-btn{
